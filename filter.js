@@ -19,11 +19,19 @@ var people = [
 
 // Your code here!
 
-// Write code that uses the filter function, and the below isCool function to return a list of people who are cool.
-
 var isCool = function(person) {
 	return person.coolnessScore > 20;
 }
+
+var coolPeople = people.filter(isCool);
+
+console.log(coolPeople.name + " is " + "cool"); //Not resolved.
+
+
+
+// Write code that uses the filter function, and the below isCool function to return a list of people who are cool.
+
+
 
 // Example results:
 //
